@@ -312,7 +312,7 @@ namespace prova
           groupBox1.Text = "Numero ciclo: "+Dativalue[0];
             txtVciclo.Text = Dativalue[1];
             txtVcesto.Text = Dativalue[2];
-            txtVannoI.Text = Dativalue[3] + "\\" + Dativalue[4] + "\\" + Dativalue[5];
+            txtVannoI.Text = Dativalue[5] + "\\" + Dativalue[4] + "\\" + Dativalue[3];
             //  txtVmeseI.Text = Dativalue[4];
             //   txtVgiornoI.Text = Dativalue[5];
 
@@ -389,7 +389,7 @@ namespace prova
 
             {
 
-                string stampa = Dativalue[1] + "X" + Dativalue[2]+" "+ Dativalue[3] + "\\" + Dativalue[4] + "\\" + Dativalue[5] + "  " + Dativalue[6] + ":" + Dativalue[7] + " " +
+                string stampa = Dativalue[1] + "X" + Dativalue[2]+" "+ Dativalue[5] + "\\" + Dativalue[4] + "\\" + Dativalue[3] + "  " + Dativalue[6] + ":" + Dativalue[7] + " " +
                                          Dativalue[11] + ":" + Dativalue[12] ;
 
 
