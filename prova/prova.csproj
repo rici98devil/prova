@@ -44,6 +44,18 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UnifiedAutomation.UaBase">
+      <HintPath>D:\UnifiedAutomation\UaSdkNetBundleEval\src\examples\ClientGettingStarted\packages\UnifiedAutomation.UaBase.3.1.1\lib\net45\UnifiedAutomation.UaBase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnifiedAutomation.UaBase.Windows">
+      <HintPath>D:\UnifiedAutomation\UaSdkNetBundleEval\src\examples\ClientGettingStarted\packages\UnifiedAutomation.UaBase.Windows.3.1.1\lib\net45\UnifiedAutomation.UaBase.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="UnifiedAutomation.UaClient">
+      <HintPath>D:\UnifiedAutomation\UaSdkNetBundleEval\src\examples\ClientGettingStarted\packages\UnifiedAutomation.UaClient.3.1.1\lib\net45\UnifiedAutomation.UaClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UnifiedAutomation.UaClientControls">
+      <HintPath>D:\UnifiedAutomation\UaSdkNetBundleEval\src\examples\ClientGettingStarted\packages\UnifiedAutomation.UaClientControls.3.1.1\lib\net45\UnifiedAutomation.UaClientControls.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -54,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

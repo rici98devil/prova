@@ -1,0 +1,9 @@
+﻿1>------ Inizio compilazione: Progetto: prova, Configurazione: Debug Any CPU ------
+1>C:\prova\prova\Form1.cs(126,30,126,31): warning CS0168: La variabile 'e' è dichiarata, ma non viene mai usata
+1>C:\prova\prova\Form1.cs(407,22,407,36): warning CS0219: La variabile 'bClearControls' è assegnata, ma il suo valore non viene mai usato
+1>C:\prova\prova\Form1.cs(47,16,47,49): warning CS0649: Non è possibile assegnare un valore diverso al campo 'Form1.m_lastClientUrlsForReverseConnect'. Il valore predefinito è null.
+1>C:\prova\prova\Form1.cs(44,25,44,43): warning CS0414: Il campo 'Form1.m_defaultClientUrl' è assegnato, ma il suo valore non viene mai usato
+1>C:\prova\prova\Form1.cs(43,37,43,50): warning CS0414: Il campo 'Form1.m_Application' è assegnato, ma il suo valore non viene mai usato
+1>C:\prova\prova\Form1.cs(45,25,45,46): warning CS0414: Il campo 'Form1.m_defaultDiscoveryUrl' è assegnato, ma il suo valore non viene mai usato
+1>  prova -> C:\prova\prova\bin\Debug\prova.exe
+========== Compilazione: 1 completate, 0 non riuscite, 0 aggiornate, 0 ignorate ==========

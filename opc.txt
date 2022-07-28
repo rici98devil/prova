@@ -1,0 +1,16 @@
+opc.tcp://192.168.1.19:4840
+
+ns=3;s="DB108 Riepilogo Dati Ciclo"
+
+ns=3;s="DB108 Riepilogo Dati Ciclo"."Date Inizio Lavorazione"
+ns=3;s="DB108 Riepilogo Dati Ciclo"."Date Fine Lavorazione"
+ns=3;s="DB108 Riepilogo Dati Ciclo"."Numero Ciclo Eseguito"
+ns=3;s="DB108 Riepilogo Dati Ciclo"."Codice Cesto"
+ns=3;s="DB108 Riepilogo Dati Ciclo"."Numero Cassette Prodotte"
+ns=3;s="BY25 EV25 Aperta Ev Rompivuoto Condensato"
+
+ns=3;s="DB108 Riepilogo Dati Ciclo"."Date Fine Lavorazione".MINUTE
+
+
+"ns=3;s=\"DB108 Riepilogo Dati Ciclo\".\"Numero Cassette Prodotte\""
+"ns=3;s=\"DB108 Riepilogo Dati Ciclo\".\"Codice Cesto\""	
