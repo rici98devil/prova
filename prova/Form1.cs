@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -249,6 +250,7 @@ namespace prova
             nodo[10] = txtGiornoF.Text;
             nodo[11] = txtOraF.Text;
             nodo[12] = txtMinutiF.Text;
+            nodo[13] = txtTempoCiclo.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -270,7 +272,7 @@ namespace prova
                     List<ReadValueId> nodesToRead = new List<ReadValueId>();
                     nodesToRead.Clear();
                     //       Cursor = Cursors.WaitCursor;
-                    for (int i = 0; i < 13; i++)
+                    for (int i = 0; i < 14; i++)
                     {
 
                         // parse the node id and get the selected attribute id.
@@ -297,7 +299,7 @@ namespace prova
                         Dativalue[c] = results[b + 1].ToString();
                         b = b + 2;
                         c++;
-                    } while (b < 26);
+                    } while (b < 28);
                 }
                 catch (Exception)
                 {
@@ -351,8 +353,57 @@ namespace prova
     //        lblMinutiF.Text = Datilbl[12];
 
             Salva_file();
+            int timeout = int.Parse(Dativalue[13]);
+            if (timeout>30)
+            {
+                /// tempo ciclo macchina
+
+                string Tempo_ciclo = Globals.DirLavoro + "\\Tempo.grx";
+                string tempo= Dativalue[10];
+
+                try
+                {
+                      System.IO.StreamWriter fs = System.IO.File.CreateText(Tempo_ciclo);
+                      fs.WriteLine(tempo);
+                      fs.Close();
+                }
+                catch (Exception)
+                {
+                        ;
+                }
+              
 
 
+
+                try
+                {
+                    Process[] localByName = Process.GetProcessesByName("Tempo");
+                    if (localByName.Length==0)
+                    {
+
+                    Process.Start(Globals.DirLavoro+"\\Tempo.exe");
+                    }
+
+
+
+
+
+                }
+                catch (Exception)
+                {
+
+                    ;
+                }
+
+            }
+            else
+            {
+                Process[] localByName = Process.GetProcessesByName("Tempo");
+                foreach (Process p in localByName)
+                {
+                    p.Kill();
+                }
+            }
 
 
 
@@ -379,6 +430,12 @@ namespace prova
             objReader = new System.IO.StreamReader(numero_ciclo);
             ciclo = objReader.ReadLine();//percorso
             objReader.Close();
+
+
+
+
+
+
 
 
 

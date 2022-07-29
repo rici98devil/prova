@@ -76,6 +76,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtTempoCiclo = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -411,7 +413,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(295, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(290, 24);
             this.menuStrip1.TabIndex = 126;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -497,11 +499,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "N cassette";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(439, 224);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(100, 13);
+            this.label19.TabIndex = 134;
+            this.label19.Text = "Tempo ciclo attuale";
+            // 
+            // txtTempoCiclo
+            // 
+            this.txtTempoCiclo.Location = new System.Drawing.Point(442, 240);
+            this.txtTempoCiclo.Name = "txtTempoCiclo";
+            this.txtTempoCiclo.Size = new System.Drawing.Size(228, 20);
+            this.txtTempoCiclo.TabIndex = 133;
+            this.txtTempoCiclo.Text = "ns=3;s=\"DB109 Timer Ciclo\".\"Read Minuti\"";
+            this.txtTempoCiclo.UseWaitCursor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 181);
+            this.ClientSize = new System.Drawing.Size(290, 178);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.txtTempoCiclo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblerrors);
             this.Controls.Add(this.label10);
@@ -601,6 +623,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtTempoCiclo;
     }
 }
 
