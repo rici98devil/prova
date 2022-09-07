@@ -22,7 +22,7 @@ namespace TempoCilco
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1) System.Diagnostics.Process.GetCurrentProcess().Kill(); // controllo e uccide.
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace TempoCilco
             System.IO.StreamReader objReader;
             try
             {
-  objReader = new System.IO.StreamReader(Tempo_ciclo);
+           objReader = new System.IO.StreamReader(Tempo_ciclo);
            lblciclo.Text = objReader.ReadLine();//percorso
             objReader.Close();
             }
