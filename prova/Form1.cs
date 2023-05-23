@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.ComponentModel;
@@ -412,7 +413,11 @@ namespace prova
         private void Salva_file()
         {
 
-            string file_name = Globals.File_Lavoro[0] + "\\" + Dativalue[0] + ".lav";
+          string destinazione = Globals.File_Lavoro[0] + "\\" + Dativalue[0] + ".lav";
+          string file_name = Globals.DirLavoro + "\\" + Dativalue[0] + ".lav";
+
+
+
             string numero_ciclo = Globals.DirLavoro + "\\Ultimo.grx";
             string ciclo;
             //controllo ultimo ciclo salvato
@@ -449,6 +454,10 @@ namespace prova
                 System.IO.StreamWriter pp = System.IO.File.CreateText(numero_ciclo);
                 pp.WriteLine(Dativalue[0]);
                 pp.Close();
+
+
+                File.Move(file_name, destinazione);
+
 
 
             }

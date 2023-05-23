@@ -351,7 +351,7 @@
             this.EndpointCB.FormattingEnabled = true;
             this.EndpointCB.Location = new System.Drawing.Point(442, 365);
             this.EndpointCB.Name = "EndpointCB";
-            this.EndpointCB.Size = new System.Drawing.Size(419, 21);
+            this.EndpointCB.Size = new System.Drawing.Size(21, 21);
             this.EndpointCB.TabIndex = 68;
             this.EndpointCB.Visible = false;
             // 
@@ -413,7 +413,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(709, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(311, 24);
             this.menuStrip1.TabIndex = 126;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -521,7 +521,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 484);
+            this.ClientSize = new System.Drawing.Size(311, 157);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.txtTempoCiclo);
             this.Controls.Add(this.groupBox1);
