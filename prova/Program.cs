@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
-
+using System.Diagnostics;
 namespace prova
 {
     static class Program
@@ -69,10 +69,10 @@ namespace prova
                 Globals.File_Lavoro[1] = objReader.ReadLine();// inserito
                 Globals.File_Lavoro[2] = objReader.ReadLine();//start
                 Globals.File_Lavoro[3] = objReader.ReadLine();//stop
-
+                Globals.File_Lavoro[4] = objReader.ReadLine();//timeout
                 objReader.Close();
             }
-
+           
         }
         
 

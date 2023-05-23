@@ -354,12 +354,12 @@ namespace prova
 
             Salva_file();
             int timeout = int.Parse(Dativalue[13]);
-            if (timeout>30)
+            if (timeout>int.Parse(Globals.File_Lavoro[4]))
             {
                 /// tempo ciclo macchina
 
                 string Tempo_ciclo = Globals.DirLavoro + "\\Tempo.grx";
-                string tempo= Dativalue[10];
+                string tempo= Dativalue[13];
 
                 try
                 {
@@ -446,7 +446,7 @@ namespace prova
 
             {
 
-                string stampa = Dativalue[1] + "X" + Dativalue[2]+" "+ Dativalue[5] + "\\" + Dativalue[4] + "\\" + Dativalue[3] + "  " + Dativalue[6] + ":" + Dativalue[7] + " " +
+                string stampa =  Dativalue[2]+" "+ Dativalue[5] + "\\" + Dativalue[4] + "\\" + Dativalue[3] + "  " + Dativalue[6] + ":" + Dativalue[7] + " " +
                                          Dativalue[11] + ":" + Dativalue[12] ;
 
 
