@@ -431,15 +431,7 @@ namespace prova
             ciclo = objReader.ReadLine();//percorso
             objReader.Close();
 
-
-
-
-
-
-
-
-
-
+                       
 
 
             if (ciclo!= Dativalue[0])
@@ -622,8 +614,6 @@ namespace prova
             {
                 Application.Restart();
             }
-
-
 
          
         }
